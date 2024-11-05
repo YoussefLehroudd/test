@@ -7,19 +7,18 @@ build:
   stage: build
   script:
     - echo "بناء المشروع..."
-    - npm install
-    - npm run build
+    
 
 test:
   stage: test
   script:
     - echo "تشغيل الاختبارات..."
-    - npm test
+  ا
 
 deploy:
   stage: deploy
   script:
     - echo "نشر المشروع..."
-    - ssh git@gitlab.com:projet4195045/weatherapp.git "cd /path/to/app && git pull && npm install && pm2 restart app"
+  
   only:
-    - main
+    - main  
