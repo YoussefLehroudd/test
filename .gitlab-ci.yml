@@ -1,0 +1,23 @@
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  script:
+    - echo "بناء المشروع..."
+    
+
+test:
+  stage: test
+  script:
+    - echo "تشغيل الاختبارات..."
+
+deploy:
+  stage: deploy
+  script:
+    - echo "نشر المشروع..."
+  
+  only:
+    - main  
